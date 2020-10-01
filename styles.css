@@ -90,6 +90,8 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   transition: margin-top 0.8s, padding 0.8s, box-shadow 0.8s;
   border-radius:12px;
   margin-top:2rem;
+  max-width:40rem;
+
 }
 .hero__card:hover {
   box-shadow:-6px 30px 33px -10px #444;
@@ -125,6 +127,7 @@ main {
   margin:0 auto;
   margin-top:2rem;
   border-radius:12px;
+  max-width:110rem;
 }
 .container {
   padding:2rem;
@@ -204,7 +207,9 @@ text-indent:1rem;
 .swatch--portfolio p {
   background-color:rgba(60, 107, 106, 0.5);
 }
-
+.swatch {
+  margin:1rem;
+}
 
 #logo {
   color: rgba(255, 255, 255, 0);
@@ -234,16 +239,13 @@ text-indent:1rem;
   nav ul {
     justify-content:flex-end;
   }
-  .hero__card__photo {
-    right:-5rem;
-    top:-6rem;
-  }
 
-  .hero__card {
+
+  /* .hero__card {
     width:60%;
-    left:20%;
+    left:calc(50% - 20rem);
     padding:4rem;
-  }
+  } */
   main {
     margin-top:2rem;
   }
@@ -264,7 +266,12 @@ text-indent:1rem;
 @media (min-width:769px) {
   main {
     margin-top:2rem;
-    max-width:none;
+    /* max-width:none; */
+  }
+  .hero__card {
+    width:60%;
+    left:calc(50% - 20rem);
+    padding:4rem;
   }
   .col.col--l-50 {
     max-width:50%;
@@ -296,6 +303,10 @@ text-indent:1rem;
 
 }
 @media (min-width:970px) {
+  .hero__card__photo {
+    right:-5rem;
+    top:-6rem;
+  }
   .col.col--xl-50 {
     max-width:50%;
     flex: 0 0 50%;
