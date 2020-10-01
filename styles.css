@@ -27,7 +27,7 @@ header {
   display:block;
   position:relative;
   max-height:840px;
-  height:20%;
+  /* height:30vh; */
 }
 nav {
   display:flex;
@@ -38,27 +38,28 @@ nav ul {
 }
 nav ul li {
   background-color:white;
-  margin-left:1rem;
-  margin-right:1rem;
+  margin-left:0.5rem;
+  margin-right:0.5rem;
   border-radius:16px;
-  max-width:60%;
   text-align:center;
 }
 nav ul li a {
   color:var(--color-Primary);
   font-family: 'AgletSans';
+  font-size:1rem;
   letter-spacing:3px;
-  padding: 1.2rem 1.2rem 1.2rem 0.5rem;
+  /* padding: 1rem 1.4rem 1.4rem 0rem; */
+  text-align:center;
+  display:block;
 
   transition:all 0.4s;
 }
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   background-color:var(--color-Primary);
   background-image:none;
-  box-shadow:6px -6px 8px -1px var(--color-Tertiary) inset;
+  box-shadow:6px -6px 8px -1px var(--color-Tertiary) inset, -3px 4px 8px -1px var(--color-Tertiary);
   color:white;
   font-family: 'AgletSans';
-  letter-spacing:4px;
 }
 
 .hero.hero--header {
@@ -69,7 +70,8 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   box-shadow:none;
   -webkit-animation: none;
           animation: none;
-  min-height:40rem;
+  min-height:60rem;
+  position:relative;
 }
 .hero.hero--header::after {
   display:none;
@@ -79,7 +81,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
 }
 .hero__card {
   position:absolute;
-  top:70%;
+  top:50%;
   left:10%;
   background-color:white;
   width:80%;
@@ -90,7 +92,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   margin-top:2rem;
 }
 .hero__card:hover {
-  box-shadow:-6px 30px 33px -10px #666;
+  box-shadow:-6px 30px 33px -10px #444;
   margin-top:1.5rem;
 }
 .hero__card__photo {
@@ -101,7 +103,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   height:10rem;
   position:absolute;
   right:calc(50% - 5rem);
-  top:-8rem;
+  top:-10rem;
   border:6px solid white;
   border-radius:100%;
   box-shadow:-2px 8px 12px -2px #444;
@@ -121,7 +123,7 @@ main {
   background-color:white;
   /* max-width: 840px; */
   margin:0 auto;
-  margin-top:25rem;
+  margin-top:2rem;
   border-radius:12px;
 }
 .container {
@@ -130,7 +132,7 @@ main {
 
 }
 .col--centered {
-  margin:0 auto;
+  justify-content:center;
 }
 .logo--inline {
   height:4rem;
@@ -173,14 +175,19 @@ text-indent:1rem;
   color: #666;
 }
 .listdate {
-  position:absolute;
-  right:10%;
+  float:right;
   color: #666;
   display:inline-block;
   margin-top:-2.5rem;
 }
 .swatch--large {
   width:100%;
+}
+.swatch {
+  transition: box-shadow 0.3s;
+}
+.swatch:hover {
+  box-shadow: -5px 8px 20px -3px #444;
 }
 .col {
   width:100%;
@@ -204,7 +211,7 @@ text-indent:1rem;
   background-color:white;
   border-radius:12px;
   position:absolute;
-  top:1rem;
+  top:2rem;
   left:1rem;
   padding:1.2rem;
   width:80px;
@@ -213,16 +220,22 @@ text-indent:1rem;
 #logo img {
   margin:0 auto;
   width:100%;
-  display:block;
+  /* display:block; */
+}
+.padded {
+  padding:2rem;
 }
 
 
+@media (max-width:426px) {
+
+}
 @media (min-width:426px) {
   nav ul {
     justify-content:flex-end;
   }
   .hero__card__photo {
-    right:2rem;
+    right:-5rem;
     top:-6rem;
   }
 
@@ -232,35 +245,80 @@ text-indent:1rem;
     padding:4rem;
   }
   main {
-    margin-top:25rem;
+    margin-top:2rem;
   }
   .container {
     padding:3rem;
   }
 
 }
-@media (min-width:768px) {
+@media (max-width:768px) {
+  .col.col--s-100 {
+    max-width:100%;
+    flex: 0 0 100%;
+  }
+  nav ul {
+    flex-flow:column;
+  }
+}
+@media (min-width:769px) {
   main {
-    margin-top:16rem;
+    margin-top:2rem;
     max-width:none;
   }
   .col.col--l-50 {
     max-width:50%;
     flex: 0 0 50%;
-    padding:12px;
+  }
+  .col.col--l-20 {
+    max-width:20%;
+    flex: 0 0 20%;
   }
   .col.col--l-30 {
     max-width:30%;
     flex: 0 0 30%;
-    padding:12px;
+  }
+  .col.col--l-40 {
+    max-width:40%;
+    flex: 0 0 40%;
   }
   .col.col--l-60 {
     max-width:60%;
     flex: 0 0 60%;
-    padding:12px;
+  }
+  .col.col--l-80 {
+    max-width:80%;
+    flex: 0 0 80%;
   }
   .hero__card {
     padding:3rem;
+  }
+
+}
+@media (min-width:970px) {
+  .col.col--xl-50 {
+    max-width:50%;
+    flex: 0 0 50%;
+  }
+  .col.col--xl-20 {
+    max-width:20%;
+    flex: 0 0 20%;
+  }
+  .col.col--xl-30 {
+    max-width:30%;
+    flex: 0 0 30%;
+  }
+  .col.col--xl-40 {
+    max-width:40%;
+    flex: 0 0 40%;
+  }
+  .col.col--xl-60 {
+    max-width:60%;
+    flex: 0 0 60%;
+  }
+  .col.col--xl-80 {
+    max-width:80%;
+    flex: 0 0 80%;
   }
   nav ul li a {
     padding:1.2rem 2.2rem;
