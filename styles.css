@@ -4,6 +4,8 @@
   --color-Tertiary: #3C6B6A;
   --color-Quaternary: #FCEBD8;
 }
+
+
 html {
   font-family: 'AttenRoundNew', sans-serif;
   scroll-behavior:smooth;
@@ -63,7 +65,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
 }
 
 .hero.hero--header {
-  background-image: url('img/portfolioBayer.svg');
+  background-image: url('img/portfolioBayer8(1000).svg');
   /* background-color:var(--color-Primary); */
   background-color:#eee;
   background-size:cover;
@@ -236,15 +238,18 @@ text-indent:1rem;
   background-image: linear-gradient(20deg, white 30%,   rgba(255, 255, 255, 0.7));
 }
 .badge p {
-  margin:0;
+  margin:0.2rem;
+  display:inline-block;
 }
 .badge--large p {
   font-size:1.6rem;
 }
 .badge--large {
-  display:inline-block;
   transform:scale(1.15);
-  margin:1rem;
+  transition:transform 0.3s;
+}
+.badge--large::hover {
+  transform:scale(1.35);
 }
 .badge--small {
   transform: scale(0.85);
@@ -260,7 +265,7 @@ text-indent:1rem;
 }
 footer {
   background-color:var(--color-Tertiary);
-  box-shadow:0 6px 12px -4px #333 inset;
+  box-shadow:0 8px 16px -4px #333 inset;
   padding:2rem;
   color:white;
   text-align:center;
@@ -285,7 +290,7 @@ footer .row a {
   text-align:center;
   text-decoration:none;
   color:white;
-  margin-bottom:8rem;
+  margin-bottom:1rem;
   border-radius:12px;
   transition: border 0.3s;
   padding-top:1rem;
@@ -332,6 +337,10 @@ footer .row a {
     margin-top:-7rem;
     left:6rem;
 }
+#backToTop {
+  opacity:0;
+  transition:opacity 0.3s;
+}
 .padded {
   padding:2rem;
 }
@@ -354,7 +363,9 @@ nav ul li a {
   .container {
     padding:1rem 3rem 3rem 3rem;
   }
-
+  .footercol {
+    max-width:30%;
+  }
 }
 @media (min-width:575px) {
   .listdate {
