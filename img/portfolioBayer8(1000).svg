@@ -21,29 +21,41 @@
     <style>
       .salmon {
         fill:#E28B71;stroke:#E28B71;
-        animation: salmonrotation 18s infinite  linear;
+        -webkit-animation: salmonrotation 18s infinite  linear;
+                animation: salmonrotation 18s infinite  linear;
         transform-box: fill-box;
         transform-origin: center;
       }
       .white {
         margin-top:0.5rem;
         fill:#fff;stroke:#fff;
-        animation: salmonrotation 18s infinite  linear;
+        -webkit-animation: salmonrotation 18s infinite  linear;
+                animation: salmonrotation 18s infinite  linear;
         transform-box: fill-box;
         transform-origin: center;
       }
 
       #triangles--salmon {
-        animation: salmontriangles 18s infinite  linear;
+        -webkit-animation: salmontriangles 18s infinite  linear;
+                animation: salmontriangles 18s infinite  linear;
         transform-box: fill-box;
       }
       #triangles--white {
-        animation: salmontriangles 18s  infinite  linear;
+        -webkit-animation: whitetranslate 18s  infinite  linear;
+                animation: whitetranslate 18s  infinite  linear;
         transform-box: fill-box;
       }
 
       .shape {
         stroke-width:10px;
+      }
+      @-webkit-keyframes salmontriangles {
+        from {
+        transform: translate(0px, 0px);
+        }
+        to{
+        transform: translate(400px, 600px);
+        }
       }
       @keyframes salmontriangles {
         from {
@@ -51,6 +63,30 @@
         }
         to{
         transform: translate(400px, 600px);
+        }
+      }
+      @-webkit-keyframes whitetranslate {
+        from {
+        transform: translate(0px, 0px);
+        }
+        to{
+        transform: translate(400px, 600px);
+        }
+      }
+      @keyframes whitetranslate {
+        from {
+        transform: translate(0px, 0px);
+        }
+        to{
+        transform: translate(400px, 600px);
+        }
+      }
+      @-webkit-keyframes salmonrotation {
+        from {
+        transform: rotate(0deg) ;
+        }
+        to{
+        transform: rotate(360deg);
         }
       }
       @keyframes salmonrotation {
@@ -66,6 +102,8 @@
         margin-left:50%;
         }
       }
+
+
     </style>
 
     <linearGradient id="background" x1="0%" y1="0%" x2="100%" y2="100%">

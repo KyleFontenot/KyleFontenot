@@ -6,6 +6,7 @@
 }
 
 
+
 html {
   font-family: 'AttenRoundNew', sans-serif;
   scroll-behavior:smooth;
@@ -54,12 +55,12 @@ nav ul li a {
   text-align:center;
   display:block;
 
-  transition:all 0.4s;
+  transition:all 0.3s;
 }
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
-  background-color:var(--color-Primary);
+  background-color:var(--color-Secondary);
   background-image:none;
-  box-shadow:6px -6px 8px -1px var(--color-Tertiary) inset, -3px 4px 8px -1px var(--color-Tertiary);
+  box-shadow:2px -2px 8px -1px #777 inset, -3px 4px 8px -1px #777;
   color:white;
   font-family: 'AgletSans';
 }
