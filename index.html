@@ -6,22 +6,21 @@
   <title>Kyle Fontenot</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
   <meta name="description" content="Portfolio website for Kyle Fontenot">
-  <!-- <link rel="stylesheet" href="https://use.typekit.net/xet0mld.css"> -->
   <link rel="stylesheet" href="forten.min.css" type="text/css">
   <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="modernizr-custom.js"></script>
 </head>
 <body id="body">
   <header id="header">
     <div id="logo"><img src="img/verticallogo.svg"/></div>
-    <nav class="">
-
+    <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="https://github.com/kylewilliamfontenot" target="__blank" rel="noopener">Github</a></li>
         <li><a href="#works" rel="noopener">Works</a></li>
       </ul>
     </nav>
-    <div class="hero hero--header">
+    <img src="img/portfolioBayer9.svg" class="hero hero--header">
       <div class="hero__card">
         <div class="hero__card__photo"></div>
         <h1>Hi there, everyone! 👋</h1>
@@ -30,6 +29,10 @@
     </div>
   </header>
   <main>
+
+
+
+
   <div class="container">
     <div class="row">
       <div class="col col--xl-60 col--s-100 padded">
@@ -51,8 +54,8 @@
               </div>
         </div>
         <hr />
-        <h2>Education: </h2>
-        <div class="row">
+        <h2>Education:</h2>
+        <div class="row" id="secEducation">
           <div class="col">
             <ul>
               <li>
@@ -75,10 +78,11 @@
               </li>
             </ul>
           </div>
+          <hr />
         </div>
-      <hr />
+
       <h2>Professional History: </h2>
-      <div class="row">
+      <div class="row" id="secProfessional">
         <div class="col">
           <ul>
             <li>
@@ -107,6 +111,7 @@
                 <li>Time Management</li>
                 <li>Staff Deployment</li>
                 <li>Inventory Forecasting</li>
+                <li>Team Leadership</li>
                 <li>Quality Assurance</li>
                 <li>Coffee Craft</li>
 
@@ -114,12 +119,15 @@
             </li>
           </ul>
         </div>
+        <hr/>
       </div>
 
       <h2 id="about">About Me: </h2>
       <div class="row">
         <div class="col">
-          <p>Hi there, I’m Kyle. I'm orignially from Riverside, but after meeting my husband of three years back in 2012, I've claimed my new home in Redlands, CA. I am a big video game fan, and lover of almost anything sci-fi or fantasy.  Most of my life –like many millennials– I’ve been attached to a computer or electronic device. It wasn’t until a few years ago that I realized the exact reason why I love computers and technology so much: where there’s a will, there’s a way. In younger years, I’d use this theme to get my hands on video games with emulators, “free” music on Napster, and organization software to replace all of my school notebooks, while I customized my Myspace page so it is the perfect level of cringe.</p>
+          <p>Hi there, I’m Kyle. I'm orignially from Riverside, but after meeting my husband of three years back in 2012, I've claimed my new home in Redlands, CA. I am a big video game fan, and lover of almost anything sci-fi or fantasy.
+
+          Most of my life –like many millennials– I’ve been attached to a computer or electronic device. It wasn’t until a few years ago that I realized the exact reason why I love computers and technology so much: where there’s a will, there’s a way. In younger years, I’d use this theme to get my hands on video games with emulators, “free” music on Napster, and organization software to replace all of my school notebooks, while I customized my Myspace page so it is the perfect level of cringe.</p>
           <p>Within the Myer-Briggs personality system, I classify as an I.N.T.P., which is the type that is considered "The Logician." Within Gallup's Strengthsfinder system, my top strengths are "ideation", "intellection", "futuristic", "relator", and "command." I am no exception to the description of the type that emphasizes abstract, conceptual thinking. Working at Starbucks for 9 years has shown me my intrinsic love for organizing workflows and extrapolating relevant information. At Starbucks, I'd be the anchor people rely on, and the biggest contributor of ways to optimize goals. </p>
 
           <h3 style="text-align:center;font-size:2.2rem;margin-top:3rem;">I.N.T.P.</h3>
@@ -148,11 +156,6 @@
 
         </div>
       </div>
-
-
-
-
-
     </div>
     <div class="col col--xl-40  col--s-100 padded">
       <h2>Works and Projects: </h2>
@@ -193,11 +196,6 @@
             </div>
           </a>
         </div>
-
-
-
-
-
       </div>
       <br/>
       <h2>Skills</h2>
@@ -278,11 +276,8 @@
             <p>Coffee</p>
           </div>
         </div>
-
         </div>
       </div>
-
-
     </div>
   </div>
 </div>
@@ -306,10 +301,8 @@
         <p>Kyle Fontenot</p>
       </a>
     </div>
-
   </div>
   <p style="font-size:0.8rem;">&copy;Kyle Fontenot 2020</p>
-
 </footer>
 </main>
   <div id="backToTop">

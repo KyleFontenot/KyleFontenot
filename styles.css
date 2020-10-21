@@ -7,6 +7,11 @@
 
 
 
+
+
+
+
+
 html {
   font-family: 'AttenRoundNew', sans-serif;
   scroll-behavior:smooth;
@@ -28,6 +33,15 @@ p {
   font-size:1.2rem;
   letter-spacing:0;
 }
+hr {
+  margin-bottom:3.5rem;
+  margin-top:3.5rem;
+}
+ul {
+list-style-image: url('img/list-image.png');
+text-indent:1rem;
+}
+
 header {
   display:block;
   position:relative;
@@ -64,9 +78,53 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   color:white;
   font-family: 'AgletSans';
 }
+main {
+  background-color:white;
+  margin:0 auto;
+  position: relative;
+  border-radius:12px;
+  max-width:90rem;
+}
+footer {
+  background-color:var(--color-Tertiary);
+  box-shadow:0 8px 16px -4px #333 inset;
+  padding:2rem;
+  color:white;
+  text-align:center;
+}
+.footericon {
+  width:4rem;
+  height:4rem;
+  padding:0.4rem;
+  display:block;
+  margin:0 auto 1rem;
 
+}
+footer .row {
+margin-bottom:0.5rem;
+}
+footer .row a {
+  text-decoration:none;
+  color:white;
+}
+.footercol {
+  cursor:pointer;
+  text-align:center;
+  text-decoration:none;
+  color:white;
+  margin-bottom:1rem;
+  border-radius:12px;
+  transition: border 0.3s;
+  padding-top:1rem;
+  border:2px solid var(--color-Tertiary);
+}
+.footercol:hover {
+  border: 2px solid white;
+}
+.footercol:hover img {
+}
 .hero.hero--header {
-  background-image: url('img/portfolioBayer8(1000).svg');
+  /* background-image: url('img/portfolioBayer9.svg'); */
   /* background-color:var(--color-Primary); */
   background-color:#eee;
   background-size:cover;
@@ -75,7 +133,8 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   box-shadow:none;
   -webkit-animation: none;
           animation: none;
-  min-height:60rem;
+  min-height:50rem;
+  max-height:40vh;
   position:relative;
 }
 .hero.hero--header::after {
@@ -126,13 +185,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   height:14rem;
   box-shadow:-10px 20px 24px -2px #444;
 }
-main {
-  background-color:white;
-  margin:0 auto;
-  position: relative;
-  border-radius:12px;
-  max-width:90rem;
-}
+
 .container {
   padding:2rem;
   padding-top:1rem;
@@ -156,19 +209,9 @@ main {
   justify-content:center;
   margin-bottom:2rem;
 }
-/* #introText * {
-  padding-left:1.5rem;
-} */
-#introText .col .caption {
-  width:100%;
-}
-hr {
-  margin-bottom:3.5rem;
-  margin-top:3.5rem;
-}
-ul {
-list-style-image: url('img/list-image.png');
-text-indent:1rem;
+
+.caption {
+  width: 100%;
 }
 
 .sublist {
@@ -264,43 +307,8 @@ text-indent:1rem;
 .caption {
   margin:0;
 }
-footer {
-  background-color:var(--color-Tertiary);
-  box-shadow:0 8px 16px -4px #333 inset;
+.padded {
   padding:2rem;
-  color:white;
-  text-align:center;
-}
-.footericon {
-  width:4rem;
-  height:4rem;
-  padding:0.4rem;
-  display:block;
-  margin:0 auto 1rem;
-
-}
-footer .row {
-margin-bottom:0.5rem;
-}
-footer .row a {
-  text-decoration:none;
-  color:white;
-}
-.footercol {
-  cursor:pointer;
-  text-align:center;
-  text-decoration:none;
-  color:white;
-  margin-bottom:1rem;
-  border-radius:12px;
-  transition: border 0.3s;
-  padding-top:1rem;
-  border:2px solid var(--color-Tertiary);
-}
-.footercol:hover {
-  border: 2px solid white;
-}
-.footercol:hover img {
 }
 #logo {
   color: rgba(255, 255, 255, 0);
@@ -342,8 +350,9 @@ footer .row a {
   opacity:0;
   transition:opacity 0.3s;
 }
-.padded {
-  padding:2rem;
+#sectionEducation {
+  /* height:0;
+  display:none; */
 }
 
 
