@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" version="1.1" preserveAspectRatio="xMaxYMax slice" viewBox="0 0 1700 1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<svg width="100%" height="100%" version="1.1" preserveAspectRatio="xMaxYMax slice" viewBox="0 -50 1700 1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
 
 <rect width="300%" height="100%" style="fill:url(#background);" />
 
 
 <use xlink:href="#triangles--white" id="whiteshow" />
-<use xlink:href="#Bayer"  clip-path="url(#triangles--salmon)"/>
+<use xlink:href="#Bayer"   clip-path="url(#triangles--salmon)"/>
 
   <defs>
     <style>
@@ -14,16 +14,15 @@
         fill:#E28B71;stroke:#E28B71;
       }
       .white {
-        margin-top:0.5rem;
         fill:#fff;stroke:#fff;
-
       }
 
       #triangles--salmon {
-                animation-name: salmontranslate;
-                animation-duration: 56s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
+        animation-name: salmontranslate;
+        animation-duration: 56s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction:normal;
         transform-origin:0% 0%;
       }
       #triangles--white {
@@ -31,55 +30,46 @@
           animation-duration: 56s;
           animation-iteration-count: infinite;
           animation-timing-function: linear;
-          transform:translate(-20px, 20px);
+          animation-direction:normal;
         transform-origin:0% 0%;
-        <!-- transform:scale(0.3);transform -->
+
       }
       .shape {
         stroke-width:10px;
       }
-      @-webkit-keyframes salmontranslate {
-        0% {
-        transform: translate(0px, 0px) rotate(0deg) scale(1);
-        }
-        50% {
-        transform: translate(-100px,-100px) rotate(180deg) scale(1);
-        }
-        100%{
-        transform: translate(0, 0) rotate(360deg) scale(1);
-        }
-      }
+
       @keyframes salmontranslate {
         0% {
-        transform: translate(0px, 0px) rotate(0deg) scale(1);
+        transform:matrix(1.00,0.00,0.00,1.00,0,0);
+        -ms-transform:matrix(1.00,0.00,0.00,1.00,0,0);
+        -webkit-transform:matrix(1.00,0.00,0.00,1.00,0,0);
         }
         50% {
-        transform: translate(-100px,-100px) rotate(180deg) scale(1);
+        transform:matrix(-1.00,0.00,-0.00,-1.00,-22,-22);
+        -ms-transform:matrix(-1.00,0.00,-0.00,-1.00,-22,-22);
+        -webkit-transform:matrix(-1.00,0.00,-0.00,-1.00,-22,-22);
         }
         100%{
-        transform: translate(0, 0) rotate(360deg) scale(1);
-        }
-      }
-      @-webkit-keyframes whitetranslate {
-        0% {
-        transform: translate(-20px, 20px) rotate(0deg) scale(1);
-        }
-        50% {
-        transform: translate(-120px, -80px) rotate(180deg) scale(1);
-        }
-        100%{
-        transform: translate(-20px, 20px) rotate(360deg) scale(1);
+        transform:matrix(1.00,-0.01,0.01,1.00,0,0);
+        -ms-transform:matrix(1.00,-0.01,0.01,1.00,0,0);
+        -webkit-transform:matrix(1.00,-0.01,0.01,1.00,0,0);
         }
       }
       @keyframes whitetranslate {
         0% {
-        transform: translate(-20px, 20px) rotate(0deg) scale(1);
+        transform:matrix(1.00,0.00,0.00,1.00,-20,20);
+-ms-transform:matrix(1.00,0.00,0.00,1.00,-20,20);
+-webkit-transform:matrix(1.00,0.00,0.00,1.00,-20,20);
         }
         50% {
-        transform: translate(-120px, -80px) rotate(180deg) scale(1);
+        transform:matrix(-1.00,0.00,-0.00,-1.00,-44,-2);
+-ms-transform:matrix(-1.00,0.00,-0.00,-1.00,-44,-2);
+-webkit-transform:matrix(-1.00,0.00,-0.00,-1.00,-44,-2);
         }
         100%{
-        transform: translate(-20px, 20px) rotate(360deg) scale(1);
+        transform:matrix(1.00,-0.01,0.01,1.00,-20,20);
+-ms-transform:matrix(1.00,-0.01,0.01,1.00,-20,20);
+-webkit-transform:matrix(1.00,-0.01,0.01,1.00,-20,20);
         }
       }
     </style>
