@@ -20,12 +20,12 @@
       }
 
       #triangles--salmon {
-                animation-name: salmontranslate;
+                animation-name: whitetranslate;
                 animation-duration: 56s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;
-        transform-origin:0% 0%;
-        transform:rotate(5deg);
+        transform-origin:50% 50%;
+        transform: rotate(10deg);
       }
       #triangles--white {
           animation-name: whitetranslate;
@@ -33,8 +33,9 @@
           animation-iteration-count: infinite;
           animation-timing-function: linear;
 
-        transform-origin:0% 0%;
-        transform:translate(-10px, 10px);
+        transform-origin:50% 50%;
+        padding-top:100px;
+        transform:translate(-20px, 10px) rotate(2deg);
       }
       .shape {
         stroke-width:10px;

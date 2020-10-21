@@ -23,25 +23,24 @@
             opacity:0;
             transform:matrix(1.93237,-0,-0,0.896185,0,100);
           }
-          18% {
+          28% {
             opacity:0;
           }
-          30%, 100% {
+          70%, 100% {
             opacity:1;
             transform:matrix(1.93237,-0,-0,0.896185,0,0);
           }
         }
         @keyframes salmontriangles {
-
           0% {
             opacity:0;
             transform:matrix(1.93237,-0,-0,0.896185,0,400);
           }
-          20% {
+          30% {
             opacity:0;
           }
 
-          30%, 100% {
+          70%, 100% {
             opacity:1;
             transform:matrix(1.93237,-0,-0,0.896185,0,0);
           }
@@ -53,14 +52,14 @@
         }
         #whitetriangles {
           opacity:0;
-          -webkit-animation: whitetriangles 7s infinite alternate;
-                  animation: whitetriangles 7s infinite alternate;
+          -webkit-animation: whitetriangles 10s infinite alternate;
+                  animation: whitetriangles 10s infinite alternate;
         }
         #Salmon {
           opacity:0;
           top:6rem;
-          -webkit-animation: salmontriangles 7s infinite alternate;
-                  animation: salmontriangles 7s infinite alternate;
+          -webkit-animation: salmontriangles 10s infinite alternate;
+                  animation: salmontriangles 10s infinite alternate;
         }
       </style>
 
