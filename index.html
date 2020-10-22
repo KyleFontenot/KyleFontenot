@@ -54,7 +54,10 @@
               </div>
         </div>
         <hr />
-        <h2>Education:</h2>
+        <div class="secToggle">
+          <button onclick="showSec(secEducation);turnArrow(arrowEducation);" class="">Education:</button>
+          <span class="secToggle__arrow" id="arrowsecEducation"></span>
+        </div>
         <div class="row" id="secEducation">
           <div class="col">
             <ul>
@@ -62,6 +65,7 @@
                 <h3>Arizona State University</h3>
                 <span class="listdate">2017 - 2021</span>
                 <p>Graphic Information Technology, B. S. - Minor: User Experience Design</p>
+                <p>Online</p>
                 <ul class="sublist">
                   <li>GPA: 3.35</li>
                 </ul>
@@ -74,6 +78,7 @@
                 <h3>Computer Training Academy</h3>
                 <span class="listdate">2013 - 2014</span>
                 <p>CompTIA A+, Network+, MSP</p>
+                <p>Riverside, CA</p>
 
               </li>
             </ul>
@@ -81,8 +86,11 @@
           <hr />
         </div>
 
-      <h2>Professional History: </h2>
-      <div class="row" id="secProfessional">
+      <div class="secToggle">
+        <button onclick="showSec(secProfessional);turnArrow(arrowProfessional);" class="secToggle">Professional History:</button>
+        <span class="secToggle__arrow" id="arrowsecProfessional"></span>
+
+      <div class="row"  id="secProfessional">
         <div class="col">
           <ul>
             <li>
@@ -129,23 +137,24 @@
 
           Most of my life –like many millennials– I’ve been attached to a computer or electronic device. It wasn’t until a few years ago that I realized the exact reason why I love computers and technology so much: where there’s a will, there’s a way. In younger years, I’d use this theme to get my hands on video games with emulators, “free” music on Napster, and organization software to replace all of my school notebooks, while I customized my Myspace page so it is the perfect level of cringe.</p>
           <p>Within the Myer-Briggs personality system, I classify as an I.N.T.P., which is the type that is considered "The Logician." Within Gallup's Strengthsfinder system, my top strengths are "ideation", "intellection", "futuristic", "relator", and "command." I am no exception to the description of the type that emphasizes abstract, conceptual thinking. Working at Starbucks for 9 years has shown me my intrinsic love for organizing workflows and extrapolating relevant information. At Starbucks, I'd be the anchor people rely on, and the biggest contributor of ways to optimize goals. </p>
-
-          <h3 style="text-align:center;font-size:2.2rem;margin-top:3rem;">I.N.T.P.</h3>
-          <div class="row padded">
-            <div class="col">
-              <h4>"ideation"</h4>
-            </div>
-            <div class="col">
-              <h4>"intellection"</h4>
-            </div>
-            <div class="col">
-              <h4>"futuristic"</h4>
-            </div>
-            <div class="col">
-              <h4>"relator"</h4>
-            </div>
-            <div class="col">
-              <h4>"command"</h4>
+          <div class="statement">
+            <h3 >I.N.T.P.</h3>
+            <div class="row" >
+              <div class="col col--30">
+                <h4>"ideation"</h4>
+              </div>
+              <div class="col col--30">
+                <h4>"intellection"</h4>
+              </div>
+              <div class="col col--30">
+                <h4>"futuristic"</h4>
+              </div>
+              <div class="col col--30">
+                <h4>"relator"</h4>
+              </div>
+              <div class="col col--30">
+                <h4>"command"</h4>
+              </div>
             </div>
           </div>
           <p> My all-time dream is to be able to become the "go-to guy" for web development inquiries. I want to be able connect with locals by helping them build their reputation through their internet persence. For the few web development classes that I had taken during my formal education, web design concepts came naturally to me. My job at Starbucks has allowed me to network quite a bit with many people that are in desperate need of an online presence. It’s such a rejuvenating epiphany to have, realizing that you’re on the path of doing what you’re meant to do.</p>
@@ -157,47 +166,49 @@
         </div>
       </div>
     </div>
-    <div class="col col--xl-40  col--s-100 padded">
+  </div>
+    <div class="col col--xl-30   col--s-100 gutterleft">
+      <br/>
       <h2>Works and Projects: </h2>
       <p>Some of these are my current works-in-progress, the later ones in the list are old projects meant as personal lessons and practices in design. Feel more-than-free to check out my CSS framework named Forten on Github and submit a pull request.</p>
-      <div class="row" id="works">
-        <div class="col col--centered">
-          <a href="https://kylewilliamfontenot.github.io/Forten/">
-            <div class="swatch swatch--large swatch--portfolio" style="background-image:url('img/forten.png');">
+      <div class="row row--centered" id="works">
+        <div class="col" >
+            <a href="https://kylewilliamfontenot.github.io/Forten/" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/forten.png');">
               <p>Forten CSS Framework</p>
-            </div>
-          </a>
+            </a>
         </div>
-        <div class="col col--centered col--l-100">
-          <a href="http://www.public.asu.edu/~kwfonten/GIT417/Rustique/index.html">
+        <div class="col col--l-100">
+          <a href="http://www.public.asu.edu/~kwfonten/GIT417/Rustique/index.html" target="_blank" rel="noopener">
             <div class="swatch swatch--large swatch--portfolio" style="background-image:url('img/rustique.png');">
               <p>Rustique website</p>
             </div>
           </a>
         </div>
         <div class="col col--centered col--l-100">
-          <a href="">
-            <div class="swatch swatch--large swatch--portfolio" style="background-image:url('');">
+            <a href="brandidentitykyle.pdf" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/BrandIdentity-CollagePage.png');" target="_blank" rel="noopener">
               <p>Kyle Fontenot's Brand Guide</p>
-            </div>
-          </a>
+            </a>
         </div>
         <div class="col col--centered col--l-100">
-          <a href="http://pickerson.com/">
-            <div class="swatch swatch--large swatch--portfolio" style="background-image:url('img/pickerson.png');">
+            <a href="http://pickerson.com/" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/pickerson.png');" target="_blank" rel="noopener">
               <p>ReviewMate</p>
-            </div>
+            </a>
           </a>
         </div>
         <div class="col col--centered col--l-100">
-          <a href="https://kylewilliamfontenot.github.io/DreamsIceCream/">
-            <div class="swatch swatch--large swatch--portfolio" style="background-image:url('img/Dreams.png');">
+          <a href="https://kylewilliamfontenot.github.io/DreamsIceCream/" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/Dreams.png');" target="_blank" rel="noopener">
               <p>Dreams Ice Cream</p>
-            </div>
           </a>
         </div>
       </div>
       <br/>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row padded">
+    <div class="col">
+
       <h2>Skills</h2>
       <div class="row">
         <div class="col">
@@ -266,21 +277,25 @@
           </div>
         </div>
         <div class="col">
+          <div class="badge" style="background-color:#b0e1e0;">
+            <p>Team Management</p>
+          </div>
+        </div>
+        <div class="col">
           <div class="badge" style="background-color:#b6b6b6;">
             <p>Notion</p>
           </div>
         </div>
         <div class="col">
-
           <div class="badge" style="background-color:#7e5623;">
             <p>Coffee</p>
           </div>
         </div>
         </div>
       </div>
-    </div>
   </div>
 </div>
+
 <footer>
   <div class="row">
     <div class="col footercol">
@@ -305,6 +320,7 @@
   <p style="font-size:0.8rem;">&copy;Kyle Fontenot 2020</p>
 </footer>
 </main>
+
   <div id="backToTop">
     <a href="#header" style="cursor:pointer;"><span class="gg-arrow-up"></span></a>
   </div>

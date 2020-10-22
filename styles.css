@@ -6,12 +6,6 @@
 }
 
 
-
-
-
-
-
-
 html {
   font-family: 'AttenRoundNew', sans-serif;
   scroll-behavior:smooth;
@@ -65,7 +59,6 @@ nav ul li a {
   font-family: 'AgletSans';
   font-size:1rem;
   letter-spacing:3px;
-  /* padding: 1rem 1.4rem 1.4rem 0rem; */
   text-align:center;
   display:block;
 
@@ -83,15 +76,26 @@ main {
   margin:0 auto;
   position: relative;
   border-radius:12px;
-  max-width:90rem;
+  max-width:110rem;
 }
 footer {
   background-color:var(--color-Tertiary);
+  background-image:url('img/bayertexture-full-portfolio1000(green2).png');
+  background-size:cover;
   box-shadow:0 8px 16px -4px #333 inset;
   padding:2rem;
   color:white;
   text-align:center;
+  position:relative;
 }
+footer .row {
+  padding:1rem;
+}
+footer .row .col {
+  padding:0.5rem;
+  margin:1rem;
+}
+
 .footericon {
   width:4rem;
   height:4rem;
@@ -122,6 +126,9 @@ footer .row a {
   border: 2px solid white;
 }
 .footercol:hover img {
+}
+.gutterleft {
+  margin-left:2rem;
 }
 .hero.hero--header {
   background-image: url('img/portfolioBayer11.svg');
@@ -234,10 +241,10 @@ footer .row a {
   margin: -2rem 1rem 1rem 0;
 }
 .swatch--large {
-  width:40%;
+
   border-radius:10px;
   min-width:15rem;
-  max-width:20rem;
+
 }
 .col {
   flex-direction:row;
@@ -258,6 +265,8 @@ footer .row a {
   background-color:white;
   background-size:100%;background-position:top center;
   min-height:14rem;
+  display:block;
+  margin:0 auto;
 }
 .swatch--portfolio p {
   background-color:rgba(60, 107, 106, 0.8);
@@ -280,24 +289,14 @@ footer .row a {
 }
 .badge {
   background-image: linear-gradient(20deg, white 30%,   rgba(255, 255, 255, 0.7));
+  display:inline-block;
+  margin:1rem 1.5rem;
 }
 .badge p {
   margin:0.2rem;
   display:inline-block;
 }
-.badge--large p {
-  font-size:1.6rem;
-}
-.badge--large {
-  transform:scale(1.15);
-  transition:transform 0.3s;
-}
-.badge--large::hover {
-  transform:scale(1.35);
-}
-.badge--small {
-  transform: scale(0.85);
-}
+
 .subtext {
   color:#888;
   font-family:'Mokoko';
@@ -349,12 +348,92 @@ footer .row a {
 #backToTop {
   opacity:0;
   transition:opacity 0.3s;
+  position:fixed;
+  right:10%;
+  bottom:10%;
+  z-index:900;
 }
-#sectionEducation {
-  /* height:0;
-  display:none; */
+#secEducation, #secProfessional {
+  max-height:0rem;
+  opacity:0;
+  margin-bottom:0;
+  transition: all 0.8s;
+}
+#secEducation div.col, #secProfessional div.col {
+  background-color:#fff;
+  padding:1rem;
+  background-image:url('img/bayertexture-full-portfolio1000(white).png');
+  background-size:100%;
+  border-radius:12px;
+}
+.statement {
+  background-image:url('img/bayertexture-full-portfolio1000(white).png');
+  background-size:cover;
+  border-radius:12px;
+  padding:2rem;
+  margin:2rem;
+}
+.statement h3 {
+  text-align:center;
+  font-size:2.2rem;
+  margin-top:1rem;
+}
+.secToggle {
+  z-index:500;
+}
+.secToggle button {
+  border:2px solid #ededed;
+  display:block;
+  width:100%;
+  text-align:left;
+  transition:border 1s;
+  margin:0 -1rem;
+  padding:1rem 1rem 1rem 4rem;
+  font-family: "AgletSans";
+  font-weight:500;
+}
+.secToggle button:hover {
+  background-color:#fbfbfb;
+  border:2px solid #e5e5e5;
+}
+.secToggle__arrow {
+  content:"";
+  display:inline-block;
+  width:16px;
+  height:16px;
+  border-bottom:8px solid #3C6B6A;
+  border-right:8px solid #3C6B6A;
+  border-radius:4px;
+  transform:rotate(-45deg);
+  position:relative;
+  left:0.5rem;
+  top:-2.8rem;
+  z-index:500;
+  margin:0;
+  transition:transform 0.5s, border-color 0.7s;
+}
+button {
+  background:none;
+  font-family: "AgletSans";
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  color:#333;
+}
+button:focus {
+  border:2px solid rgba(0,0,0,0);
+  outline:none;
 }
 
+
+.show {
+  max-height:100rem!important;
+  opacity:1!important;
+  margin-bottom:1.5rem!important;
+}
+.turn {
+  transform:rotate(45deg);
+  border-color:#E28B71;
+}
 
 
 @media (max-width:426px) {
@@ -475,5 +554,8 @@ nav ul li a {
 @media only screen and (min-width: 924px) {
   .caption {
     width:100%;
+  }
+  .gutterleft{
+    margin-left:10%!important;
   }
 }

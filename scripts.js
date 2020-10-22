@@ -1,6 +1,8 @@
 const backTopBtn = document.getElementById("backToTop");
-const secEducation = document.getElementById("sectionEducation");
-// const secEducation = document.getElementById("sectionEducation");
+const secEducation = document.getElementById("secEducation");
+const arrowEducation = document.getElementById("arrowsecEducation");
+const secProfessional = document.getElementById("secProfessional");
+const arrowProfessional = document.getElementById("arrowsecProfessional");
 
 window.onscroll = function() {scrollFunction()};
 
@@ -13,7 +15,27 @@ function scrollFunction() {
 }
 
 function showSec(domSection) {
-  domSection.style.height = "100%";
-  domSection.style.display = "block";
+  if (domSection.classList.contains("show")) {
+    domSection.classList.remove("show");
+  }
+  else {
+    domSection.classList.add("show");
+  }
+}
 
+function turnArrow(arrow) {
+  if (!arrow.style.transform === "rotate(-45deg);") {
+    arrow.style.transform = "rotate(-45deg)"
+  }
+  else {
+    arrow.style.transform = "rotate(45deg)"
+  }
+}
+function turnArrow(arrow) {
+  if (arrow.classList.contains("turn")) {
+    arrow.classList.remove("turn");
+  }
+  else {
+    arrow.classList.add("turn");
+  }
 }
