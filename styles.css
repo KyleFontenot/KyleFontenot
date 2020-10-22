@@ -61,14 +61,14 @@ nav ul li a {
   letter-spacing:3px;
   text-align:center;
   display:block;
-
   transition:all 0.3s;
 }
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
-  background-color:var(--color-Secondary);
+  background-color:white;
   background-image:none;
-  box-shadow:2px -2px 8px -1px #777 inset, -3px 4px 8px -1px #777;
-  color:white;
+  box-shadow:-4px 4px 0px 1px var(--color-Secondary);
+  margin-top:-4px;
+  color:var(--color-Secondary);
   font-family: 'AgletSans';
 }
 main {
@@ -118,12 +118,15 @@ footer .row a {
   color:white;
   margin-bottom:1rem;
   border-radius:12px;
-  transition: border 0.3s;
+  transition: all 0.3s;
   padding-top:1rem;
-  border:2px solid var(--color-Tertiary);
+  border:2px solid rgba(0,0,0,0);
+  margin-top:0;
 }
 .footercol:hover {
   border: 2px solid white;
+  box-shadow:-8px 8px 0px 1px white, -10px 10px 10px -1px rgba(0,0,0,0.1) ;
+  margin-top:8px!important;
 }
 .footercol:hover img {
 }
@@ -198,7 +201,10 @@ footer .row a {
   padding-top:1rem;
 
 }
-
+.col {
+  flex-direction:row;
+  flex-wrap:wrap;
+}
 .col--centered {
   justify-content:center;
 }
@@ -240,25 +246,18 @@ footer .row a {
   display:inline-block;
   margin: -2rem 1rem 1rem 0;
 }
-.swatch--large {
 
-  border-radius:10px;
-  min-width:15rem;
-
-}
-.col {
-  flex-direction:row;
-  flex-wrap:wrap;
-}
 .swatch {
-  box-shadow: -1px 5px 10px -4px #444;
+  box-shadow: -1px 5px 8px -4px #444;
   transition: box-shadow 0.3s;
+  overflow:hidden;
 }
 .swatch:hover {
   box-shadow: -2px 7px 14px -3px #444;
 }
-.swatch p {
-
+.swatch--large {
+  border-radius:10px;
+  min-width:15rem;
 }
 .swatch--portfolio {
   background-repeat:no-repeat;
@@ -269,7 +268,7 @@ footer .row a {
   margin:0 auto;
 }
 .swatch--portfolio p {
-  background-color:rgba(60, 107, 106, 0.8);
+  background-color:rgba(60, 107, 106, 0.9);
 
 }
 .swatch--portfolio::after {
@@ -314,10 +313,10 @@ footer .row a {
   background-color:white;
   border-radius:12px;
   position:absolute;
-  top:2rem;
+  top:1rem;
   left:1rem;
-  padding:1.2rem;
-  width:80px;
+  padding:1.4rem;
+  /* width:100px; */
   z-index:900;
 }
 #logo img {
@@ -550,12 +549,15 @@ nav ul li a {
     width:80%;
     /* margin:4rem; */
   }
+  .gutterleft{
+    margin-left:2%!important;
+    max-width:38%!important;
+    flex:0 0 38%!important;
+  }
 }
 @media only screen and (min-width: 924px) {
   .caption {
     width:100%;
   }
-  .gutterleft{
-    margin-left:10%!important;
-  }
+
 }
