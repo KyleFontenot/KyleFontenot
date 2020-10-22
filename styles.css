@@ -349,8 +349,8 @@ footer .row a {
   opacity:0;
   transition:opacity 0.3s;
   position:fixed;
-  right:10%;
-  bottom:10%;
+  right:5%;
+  bottom:6%;
   z-index:900;
 }
 #secEducation, #secProfessional {
