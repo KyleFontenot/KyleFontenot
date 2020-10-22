@@ -126,7 +126,7 @@ footer .row a {
 .footercol:hover {
   border: 2px solid white;
   box-shadow:-8px 8px 0px 1px white, -10px 10px 10px -1px rgba(0,0,0,0.1) ;
-  margin-top:8px!important;
+
 }
 .footercol:hover img {
 }
@@ -509,6 +509,9 @@ nav ul li a {
   }
   .hero__card {
     padding:3rem;
+  }
+  .footercol:hover {
+    margin-top:8px!important;
   }
 
 }
