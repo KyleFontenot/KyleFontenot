@@ -12,26 +12,24 @@
 </head>
 <body id="body">
   <header id="header">
-    <div id="logo"><img src="img/verticallogo.svg"/></div>
+    <a href="index.html">
+      <div id="logo"><img src="img/verticallogo.svg"/></div>
+    </a>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="works.html" rel="noopener">Works</a></li>
         <li><a href="https://github.com/kylewilliamfontenot" target="__blank" rel="noopener">Github</a></li>
-        <li><a href="#works" rel="noopener">Works</a></li>
       </ul>
     </nav>
     <img  class="hero hero--header">
       <div class="hero__card">
-        <div class="hero__card__photo"></div>
+        <div class="hero__card__photo" id="photoCardHome"></div>
         <h1>Hi there, everyone! 👋</h1>
         <p>My name is Kyle Fontenot. I'm a practicing web developer, aspiring video game developer, and coffee barista right in lovely Redlands, CA. </p>
       </div>
     </div>
   </header>
   <main>
-
-
-
 
   <div class="container">
     <div class="row">
@@ -137,7 +135,7 @@
           <p>
           Most of my life –like many millennials– I’ve been attached to a computer or electronic device. It wasn’t until a few years ago that I realized the exact reason why I love computers and technology so much: where there’s a will, there’s a way. In younger years, I’d use this theme to get my hands on video games with emulators, “free” music on Napster, and organization software to replace all of my school notebooks, while I customized my Myspace page so it is the perfect level of cringe.</p>
           <p>Within the Myer-Briggs personality system, I classify as an I.N.T.P., which is the type that is considered "The Logician." Within Gallup's Strengthsfinder system, my top strengths are "ideation", "intellection", "futuristic", "relator", and "command." I am no exception to the description of the type that emphasizes abstract, conceptual thinking. Working at Starbucks for eight years has shown me my intrinsic love for organizing workflows and extrapolating relevant data. At Starbucks, I'd be the anchor people rely on, and the biggest contributor of goal optimizations.</p>
-          <div class="statement">
+          <div class="statement" style="margin:2rem;">
             <h3 >I.N.T.P.</h3>
             <div class="row" >
               <div class="col col--30">
@@ -172,34 +170,38 @@
       <br/>
       <h2>Works and Projects: </h2>
       <p>Some of these are my current works-in-progress, the later ones in the list are old projects meant as personal lessons and practices in design. Feel more-than-free to check out my CSS framework named Forten on Github and submit a pull request.</p>
-      <div class="row row--centered" id="works">
+      <div class="row" style="justify-content:space-evenly;">
         <div class="col" >
-            <a href="https://kylewilliamfontenot.github.io/Forten/" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/forten.png');">
+            <a href="projects/forten.html"  class="swatch swatch--large swatch--portfolio" style="background-image:url('img/forten.png');">
               <p>Forten CSS Framework</p>
             </a>
         </div>
-        <div class="col col--l-100">
-          <a href="http://www.public.asu.edu/~kwfonten/GIT417/Rustique/index.html" target="_blank" rel="noopener">
-            <div class="swatch swatch--large swatch--portfolio" style="background-image:url('img/rustique.png');">
+        <div class="col col--centered">
+          <a href="http://www.public.asu.edu/~kwfonten/GIT417/Rustique/index.html" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/rustique.png');">
               <p>Rustique website</p>
-            </div>
           </a>
         </div>
-        <div class="col col--centered col--l-100">
-            <a href="brandidentitykyle.pdf" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/BrandIdentity-CollagePage.png');" target="_blank" rel="noopener">
+        <!-- <div class="col col--centered">
+            <a href="brandidentitykyle.pdf" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/BrandIdentity-CollagePage.png');" >
               <p>Kyle Fontenot's Brand Guide</p>
             </a>
-        </div>
-        <div class="col col--centered col--l-100">
-            <a href="http://pickerson.com/" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/pickerson.png');" target="_blank" rel="noopener">
+        </div> -->
+
+        <div class="col col--centered">
+            <a href="projects/reviewmate.html" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/pickerson.png');" >
               <p>ReviewMate</p>
             </a>
           </a>
         </div>
-        <div class="col col--centered col--l-100">
-          <a href="https://kylewilliamfontenot.github.io/DreamsIceCream/" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/Dreams.png');" target="_blank" rel="noopener">
+        <div class="col">
+          <a href="projects/dreams.html" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/Dreams.png');" >
               <p>Dreams Ice Cream</p>
           </a>
+        </div>
+        <div class="col col--centered">
+            <a href="projects/dronesifter.html" class="swatch swatch--large swatch--portfolio" style="background-image:url('img/dronesifter1.png');" >
+              <p>Dronesifter</p>
+            </a>
         </div>
       </div>
       <br/>
@@ -297,6 +299,8 @@
   </div>
 </div>
 
+
+</main>
 <footer role="contentinfo">
   <div class="row">
     <div class="col footercol">
@@ -320,7 +324,6 @@
   </div>
   <p style="font-size:0.8rem;">&copy;Kyle Fontenot 2020</p>
 </footer>
-</main>
   <div id="backToTop">
     <a href="#header" style="cursor:pointer;"><span class="gg-arrow-up"></span></a>
   </div>
