@@ -1,2 +1,2 @@
 # Kyle Fontenot's Portfolio
-Uses my own Forten framework to construct a conglomeration of all of my projects. Check me out!
+Hi there! Newcomer to the web design scene, aspiring video game developer, and just a plain ol' geek. 
