@@ -1,6 +1,6 @@
 # Kyle Fontenot
 Hi there! I'm a freelance web developer/designer, sci-fi/fantasy novel lover, aspiring video game developer, and just a plain ol' geek. 
-My web development focus is in creating SolidJS and React apps and websites with the aspiration of using and contributing to higher tooling with [SolidJS](https://www.solidjs.com/) and [Astro](https://astro.build/). I really love exercising my design muscles, organizing documentation, and using emergent tools. 
+My web development focus is in creating SolidJS and React apps and websites with the aspiration of using and contributing to higher tooling with [SolidJS](https://www.solidjs.com/) and [Astro](https://astro.build/). I love exercising my design muscles, organizing documentation, and using emergent tools. 
 
 ### Favorite tools: 
 * SolidJS
