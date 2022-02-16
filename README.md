@@ -11,10 +11,10 @@ My web development focus is in creating SolidJS and React apps and websites with
 * Affinity 
 
 ### Looking forward to learning: 
-React Native, Supabase, Redis, more Node, Atom package development, Electron, Godot, Blender, and more drawing skills
+Rust, React Native, Supabase, Redis, more NodeJS, Atom package development, Electron, Godot, Blender, and more drawing skills
 
 ### My computer:
-* IDE: [Atom](https://atom.io/) (with vim-plus-mode)
+* IDE: [VSCode](https://code.visualstudio.com/) (with Vim)
 * Browser: [Brave](https://brave.com/)
 * Terminal: [Hyper](https://hyper.is/)
 * OS: [Pop_OS](https://pop.system76.com/)
